@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/painel.css">
+    <title>Painel do admin</title>
+</head>
+<body>
+    <div class="header-painel">
+        <h2>Cadastro Notícia</h2>
+    </div>
+
+    <form method="post" action="/admin/cadastro" class="formulario">
+        <input type="text" name="tituloNoticia" placeholder="Título da noticia..." />
+        <input type="text" name="urlImagem" placeholder="Link da imagem da noticia..." />
+        <input type="text" name="slug" placeholder="Slug" />
+        <textarea name="noticia" placeholder="Noticia..."></textarea>
+        <input type="submit" name="acao" value="Cadastrar">
+    </form>
+    
+    <br/>
+    <br/>
+
+    <div class="header-painel">
+        <h2>Listando Noticias</h2>
+    </div>
+
+    <div class="noticia-single">
+        <p>Titulo Noticia: Minha Noticia</p>
+        <a href="/admin/deletar/10">(X)</a>
+    </div>
+</body>
+</html>
